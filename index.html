@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
-    <button id="previous">Previous</button>
-    <div id="stablecontainer">
-        <img :src="slides[0].immagine" alt="">
+    <div id="app">
+        <!--<button id="previous">Previous</button><!-->
+          <img src="slides[0].immagine" alt="">
+        <!--<button id="next">next</button><!-->
     </div>
-    <button id="next">next</button>
-
-
-
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    
     <script src="main.js"></script>
 </body>
 
