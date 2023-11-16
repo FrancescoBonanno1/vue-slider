@@ -30,12 +30,25 @@ createApp({
     }
     
 },
+counter :0,
 methods :{
     previous() {
-      
-    },
+      //definiamo la condizione prima di definire il ciclo, cosa cerco? se la posizione è 0 devo definire una variabile che mi faccia arrivare alla fine a mano a mano//
+      let ultimaimmagine = this.slides.immagine.lenght-1;
+      if(this.counter > 0){
+        this.counter--;}
+        else{
+            this.counter = ultimaimmagine;
+        }
+      },
     next() {
-     
+        let ultimaimmagine = this.slides.immagine.lenght-1;
+        if (this.counter < ultimaimmagine) {
+            this.counter++;
+        }
+        else{
+            this.counter = 0;
+        }
     }
 
 }
