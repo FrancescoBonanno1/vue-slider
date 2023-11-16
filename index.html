@@ -11,9 +11,11 @@
 
 <body>
     <div id="app">
-        <!--<button id="previous">Previous</button><!-->
-          <img src="slides[0].immagine" alt="">
-        <!--<button id="next">next</button><!-->
+        <button @click="previous()">Previous</button>
+
+          <img  :src="slides[0].immagine" alt="">
+        
+        <button @click="next()">next</button>
     </div>
     
     

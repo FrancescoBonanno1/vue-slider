@@ -6,7 +6,7 @@ createApp({
         return {
             slides: [{
 
-                immagine: 'https://my.alfred.edu/zoom/_images/foster-lake.jpg',
+                immagine: 'https://img.freepik.com/free-photo/sunset-time-tropical-beach-sea-with-coconut-palm-tree_74190-1075.jpg',
                 titolo: 'Tramonto sulla spiaggia',
                 descrizione: 'Un meraviglioso tramonto con colori caldi'
             },
@@ -22,12 +22,21 @@ createApp({
                 titolo: 'Campi verdi',
                 descrizione: 'Vaste distese di campi verdi che si estendono all\'orizzonte.'
             }
-
-
-            ]
-
-
-        }
+            
+            
+        ],
+        
+        
     }
-})
-    .mount(`#app`);
+    
+},
+methods :{
+    previous() {
+      
+    },
+    next() {
+     
+    }
+
+}
+}).mount(`#app`);
